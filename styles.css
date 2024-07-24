@@ -1,0 +1,118 @@
+/* Desktop ver */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("./assets/fonts/WorkSans-VariableFont_wght.ttf") format("truetype");
+}
+.main {
+  display: flex;
+  min-height: 30rem;
+  height: 100vh;
+  background-color: hsl(275, 100%, 97%);
+}
+.main__image-desk {
+  background-image: url("./assets/images/background-pattern-desktop.svg");
+  background-size: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: inherit;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.main__image-mobile {
+  background-image: url("./assets/images/background-pattern-mobile.svg");
+  background-size: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: inherit;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.accordion__container-desk {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 26em;
+  border-radius: 15px;
+  padding: 32px;
+}
+.accordion__container-mobile {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 75%;
+  border-radius: 15px;
+  padding: 32px;
+}
+.accordion__question-box {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.accordion__question-text {
+  position: absolute;
+  font-family: "MyFont";
+  color: hsl(292, 42%, 14%);
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.5s ease;
+  margin-right: 5em;
+}
+.accordion__image {
+  position: inherit;
+  margin-left: auto;
+  margin-bottom: auto;
+}
+.accordion__answer-box {
+  padding-bottom: 3px;
+  font-family: "MyFont";
+  color: hsl(292, 16%, 49%);
+  font-size: 12.5px;
+}
+
+.accordion__question-text:hover {
+  color: hsl(276, 56%, 46%);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  transform: scale(0.8);
+}
+.header__text {
+  margin: 5px;
+  font-family: "MyFont";
+  font-weight: 700;
+  font-size: 45px;
+  color: hsl(292, 42%, 14%);
+  padding-left: 10px;
+}
+
+.drop-up {
+  transition: transform 1s, max-height 0.8s ease, opacity 0.6s ease;
+  transform: translate(0, 30%);
+  max-height: 0px;
+  opacity: 0;
+}
+
+.drop-down {
+  transition: transform 1s, max-height 1.8s ease, opacity 1.5s ease;
+  transform: translate(0, 0px);
+  max-height: 200px;
+  opacity: 1;
+}/*# sourceMappingURL=styles.css.map */
